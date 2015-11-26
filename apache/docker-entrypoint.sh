@@ -169,4 +169,6 @@ dl_and_move_plugin() {
 dl_and_move_plugin "wp-super-cache"
 dl_and_move_plugin "wp-mail-smtp"
 
+chown -R www-data:www-data .
+
 exec "$@"
